@@ -1,0 +1,182 @@
+.page {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100vw;
+  height: 100vh;
+  background-color: #444444;
+  transition: all 0.4s;
+}
+#close {
+  color:black;
+  cursor: pointer;
+  font-size: 23px;
+  font-weight: bold;transition: all 0.2s;
+}
+#close:hover {
+  color: #f7ae31;
+}
+.col-md-6 {
+  margin-top: 15px;
+}
+.loginpage {
+  width:400px;
+  padding:65px 25px;
+  background-color: white;
+  border-radius: 5px;
+}
+.layer {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.5;
+}
+
+.br-code {
+  width: 100%;
+  height: 100%;
+  background-image: url("https://media.istockphoto.com/photos/coding-on-digital-interface-and-blue-network-background-picture-id1130758780");
+  background-size: cover;
+}
+
+.shadow, .showitem:hover {
+  -webkit-box-shadow: 1px 1px 19px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 1px 1px 19px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 1px 1px 19px 0px rgba(0, 0, 0, 0.75);
+}
+
+h4 {
+  font-size: 55px;
+}
+
+.br {
+  background-color: white;
+  padding: 15px 25px;
+  height: fit-content;
+}
+
+html, body {
+  font-family: "David Libre", serif;
+  font-size: 18px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+ul {
+  position: relative;
+  padding: 10px 0px;
+  margin: 0;
+}
+ul img {
+  width: 98px;
+}
+ul li {
+  cursor: pointer;
+  height: fit-content;
+  transform: translateY(50%);
+  margin-left: 30px;
+  position: relative;
+  transition: all 0.4s;
+}
+ul li:hover {
+  color: #FFA200;
+}
+
+@media (max-width: 999px) {
+  ul {
+    padding: 10px;
+  }
+
+  li {
+    display: none;
+    height: 0px;
+    width: 100%;
+  }
+}
+a {
+  color: black;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+
+.slider {
+  height: 750px;
+  width: 100%;
+  background-color: black;
+  background-image: url("https://assets.weforum.org/article/image/large_yXlgQZYAiGIatbUb2LsMeC5yVUuDf3_yxcVI8xYjXYs.jpg");
+  background-size: cover;
+}
+
+.btn-orange2 {
+  border: 0;
+  border-radius: 40px 0px 40px 0px;
+  padding: 5px 25px;
+}
+.btn-orange2:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.btn-orange, .btn-orange2 {
+  color: white;
+  background: linear-gradient(to right, #FFA200 100%, #FFA200 0%);
+  -webkit-transition: background 1s ease-out;
+  -moz-transition: background 1s ease-out;
+  -o-transition: background 1s ease-out;
+  transition: background 1s ease-out;
+}
+.btn-orange:hover, .btn-orange2:hover {
+  -webkit-transition: background 1s ease-out;
+  -moz-transition: background 1s ease-out;
+  -o-transition: background 1s ease-out;
+  transition: background 1s ease-out;
+  color: white;
+  background: #fab76b;
+  background: linear-gradient(to right, #fab76b 50%, #f89625 100%);
+}
+
+p {
+  margin: 0 !important;
+}
+
+.not {
+  padding: 8px;
+  width: 100%;
+  background-color: black;
+  border-radius: 5px;
+  color: white;
+  opacity: 0.8;
+}
+.form-control {
+  margin: 25px 0px;
+}
+.br-smv {
+  background: #fab76b;
+  background: -moz-linear-gradient(left, #fab76b 0%, #f89625 100%);
+  background: -webkit-gradient(left top, right top, color-stop(0%, #fab76b), color-stop(100%, #f89625));
+  background: -webkit-linear-gradient(left, #fab76b 0%, #f89625 100%);
+  background: -o-linear-gradient(left, #fab76b 0%, #f89625 100%);
+  background: -ms-linear-gradient(left, #fab76b 0%, #f89625 100%);
+  background: linear-gradient(to right, #fab76b 0%, #f89625 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#fab76b", endColorstr="#f89625", GradientType=1 );
+}
+
+.showitem {
+  width: 100%;
+  padding: 12px 20px;
+  background-color: white;
+  border-radius: 30px;
+  margin-bottom: 20px;
+  transition: all 0.3s;
+  text-align: center;
+}
+.showitem:hover {
+  color: #f7ae31;
+}

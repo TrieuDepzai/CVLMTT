@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lê Minh Triệu</title>
+    <link rel="stylesheet" href="center.css">
+    <link rel="stylesheet" href="./bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=David+Libre&display=swap" rel="stylesheet">
+    <script src="jquery.min.js"></script>
+    <link rel="stylesheet" href="dist/app.css">
+    <script type="text/javascript"> (function() {
+        var css = document.createElement('link'); css.href = 'https://use.fontawesome.com/releases/v5.1.0/css/all.css';
+         css.rel = 'stylesheet'; css.type = 'text/css'; document.getElementsByTagName('head')[0].appendChild(css); })();
+   </script>
+   <script src="itemslide.js"></script>
+</head>
+<script>
+    var data = "false";
+    $(document).ready(function() {
+        
+        $('#login').css("opacity","0");
+                    $('#login').css("visibility","hidden");
+        $(document).on('click','.lgopen',function() {
+            $('#login').css("transition","all 0.6s");
+            try {
+                if (data == "true") {
+                    $('#login').css("visibility","hidden");
+                    setTimeout(() => {
+                    $('#login').css("opacity","0");
+                    data="false";
+                    }, 100);
+                } else {    
+                    $('#login').css("visibility","visible");
+                    setTimeout(() => {
+                    $('#login').css("opacity","1");
+                    data="true";
+                    }, 100);
+                }
+            } catch (error) {
+                alert(error)   
+            }
+        })
+    })
+</script>
+<body>
+    <div class="container">
+        <ul class="row">
+            <img src="./lmt.png" style="width:109px">
+            <a href="#">
+                <li>Trang Chủ</li>
+            </a>
+            <div style="margin-left: auto;" class="row">
+            <li class="lgopen">
+                <button class="btn btn-orange2">
+                    Tài Khoản
+                </button>
+            </li>
+            </div>
+        </ul>
+    </div>
+    <div class="slider cont">
+        <div class="layer"></div>
+        <div class="centered" style="top:40%">
+            <center>
+                <img src="smv.png" style="width:100%">
+            <div style="margin:15px">
+                <p style="color:white">CV cá nhân của Lê Minh Triệu</p>
+            </div>
+            </center>
+        </div>
+
+        <div class="centered2" style="z-index: 3000;">
+            <center>
+                <div class="col-12 br shadow row" style="max-width: 1400px;">
+               
+                    <div class="col-xl-12 col-md-12 col-lg-12" style="margin:0px">
+                        <p>Số điện thoại 0903898708</p>
+                    </div>
+            </div>
+            </center>   
+        </div>
+    </div>
+    <div style="padding-top:100px;padding-bottom: 30px;" class="br-smv cont">
+        <div class="centered">
+            <div style="width:300px;height:300px" class="shadow rounded-circle"></div>
+        </div>
+        <div class="container">
+            <div class="row" style="font-size: 18px;">
+                <div class="col-12" style="margin-bottom: 60px;">
+                    <center>
+                    <b><h3 style="color:rgb(104, 101, 101)">KỸ NĂNG CHÍNH</h3></b>
+                    </center>
+                </div>
+                <div class="col" style="margin-top: 30px;">
+                    <center>
+                        <i class="fas fa-street-view"></i>
+                        <div><b>PHP/MYSQL</b></div>
+                    </center>
+                </div>
+                <div class="col">
+                    <center>
+                        <i class="fas fa-street-view"></i>
+                        <div><b>HTML/CSS/JS</b></div>
+                    </center>
+                </div>
+                <div class="col" style="margin-top: 30px;">
+                    <center>
+                        <i class="fas fa-street-view"></i>
+                        <div><b>REACTJS</b></div>
+                    </center>
+                </div>
+
+                <div class="col-12" style="margin-top: 100px;">
+                    <center>
+                        <div class="col-xl-6 col-md-6 col-lg-6">
+                            <div class="not">
+                                mình sẽ nói thêm về mình bên dưới ^^
+                            </div>
+                        </div>
+                    </center>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container" style="padding: 30px;">
+        <div class="d-flex" style="justify-content: center;">
+                <div class="itemslide btn btn-orange2" data="item1">
+                    Về Mình
+                </div>
+                <div class="itemslide btn btn-orange2" data="item2">
+                    Kỹ Năng
+                </div>
+        </div>
+        <div class="islide" id="item1">
+            <div class="row">
+                <div class="col-xl-6 col-md-6 col-lg-6">
+                    <h3>Trang CV LMT</h3>
+                    <p>
+                        Được viết bởi Lê Minh Triệu
+                        <br>- Mình tên là Lê Minh Triệu / sinh năm 2002
+                        <br>- mình đã học lập trình được 3 năm
+                        <br>- 2018 - 2020 Học tại trường Aptech ấn độ
+                        <br>- Hiện tại mình đang tìm một công việc phù hợp với mình
+                        <br>- Hy vọng mình sẽ đáp ứng được các tiêu chí của nhà tuyển dụng
+                        <br>- xem thêm về kỹ năng của mình
+                        <div class="itemslide btn btn-orange" data="item2">
+                            Kỹ Năng
+                        </div>
+                    </p>
+                </div>
+                <div class="col-xl-6 col-md-6 col-lg-6">
+                    <img src="dist/tr.jpg" width="100%">
+                </div>
+            </div>
+        </div>
+        <div class="islide" id="item2">
+            <div class="row">
+                <div class="col-xl-6 col-md-6 col-lg-6">
+                    <h3>Ngôn ngữ / Thư viện</h3>
+                    <p>
+                        Các ngôn ngữ thư viện mình có thể làm việc từ trung - tốt
+                        <br>- HTML / CSS(SCSS) / JavaScript  
+                        <br>- ReactJS / Redux
+                        <br>- NodeJS / PHP / MySQL 
+                        <br>
+                        <br>Về website:
+                        <br>- Khả năng responsive tốt
+                        <br>- Có khả năng viết Front/Backend
+                        <br>
+                        <br>Đã làm 2 dự án:
+                        <br>- Dự án bán bảo hiểm
+                        <br>- Dự án ứng dụng quản lý cửa hàng
+                        <br><br>
+                        Facebook của mình: <a href="https://www.facebook.com/trieu.zzz/" target="_blank">Click</a>
+                    </p>
+                </div>
+                <div class="col-xl-6 col-md-6 col-lg-6">
+                    <img src="dist/tr.jpg" width="100%">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="fixed-top cont">
+        <div class="centered" id="login" style="transform: translate(-50%, 50%)">
+            <div class="loginpage">
+                <div class="top-right lgopen" id="close">
+                    X
+                </div>
+                <Center>
+                    <h5>
+                        <p style="color:#fab76b">LÊ MINH TRIỆU</p>
+                    </h5>
+                    <form action="">
+                        <input type="text" placeholder="Tài Khoản" class="form-control">
+                        <input type="text" placeholder="Mật Khẩu" class="form-control">
+                        <input type="submit" class="w-100 btn btn-orange" value="Đăng Nhập">
+                    </form>
+                    <div class="row" style="margin-top:15px">
+                        <div class="col-6" style="width:fit-content;text-align: left;">
+                            <a href="https://www.facebook.com/trieu.zzz/" target="_blank"><i class="fab fa-facebook-square"></i></a>
+                        </div>
+                        <div class="col-6" style="text-align: right;margin:0;">
+                            <a href="#">Đăng Ký</a>
+                        </div>
+                    </div>
+                </Center>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
